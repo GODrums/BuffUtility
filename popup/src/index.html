@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="bg-dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/popup/css/output.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header
+			class="bg-primary flex align-middle items-center pl-2 pr-2 flex-row justify-between"
+		>
+			<div id="version" class="text-white">v. 1.0.0</div>
+			<div class="image-container">
+				<img
+					class="logo justi"
+					src="/resources/logotransp.png"
+					alt="logo"
+				/>
+			</div>
+			<div class="reset-container pt-1 pb-1 text-white">
+				<button
+					id="button-reset"
+					class="btn btn-primary bg-background rounded-md pl-2 pr-2"
+				>
+					Reset
+				</button>
+			</div>
+		</header>
+		<div class="bg-background">
+			<section>
+				<h3>Currency</h3>
+				<div class="card">
+					<p>Display Currency</p>
+					<button type="button" class="dropdown-button">
+						EUR- €
+					</button>
+				</div>
+				<div class="card">
+					<p>Listing Difference Style</p>
+					<button type="button" class="dropdown-button">
+						¥ Difference
+					</button>
+				</div>
+				<div class="card">
+					<p>Color Purchase Options</p>
+					<input type="checkbox" class="checkbox-lg" />
+				</div>
+			</section>
+			<section>
+				<h3>Listing</h3>
+				<div class="card" style="display: block !important">
+					<p class="pb-2">Listing Options</p>
+					<ul class="listing-options">
+						<li>
+							<label>3D Inspect</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+						<li>
+							<label>Inspect in Server</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+						<li>
+							<label>Copy !gen/!gengl</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+						<li>
+							<label>Share</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+						<li>
+							<label>Match floatDB</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+						<li>
+							<label>Find Similar</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+						<li>
+							<label>Detail</label>
+							<input type="checkbox" class="checkbox-md" />
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<footer class="bg-primary items-center align-middle" style="height: 60px;">
+			<div class="tabbar flex flex-row justify-between pl-5 pr-5 translate-y-1/4">
+				<button class="tab">
+					<img src="/popup/icons/gear-solid.svg" class="tab-icon" />
+					<p>Settings</p>
+				</button>
+				<button class="tab">
+					<img src="/popup/icons/bug-solid.svg" class="tab-icon" />
+					<p>Experimental</p>
+				</button>
+				<button class="tab">
+					<img src="/popup/icons/steam.svg" class="tab-icon" />
+					<p>PSE</p>
+				</button>
+				<button class="tab">
+					<img src="/popup/icons/box-solid.svg" class="tab-icon" />
+					<p>Modules</p>
+				</button>
+			</div>
+		</footer>
+	</body>
+</html>

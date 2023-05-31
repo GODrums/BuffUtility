@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 12px;
+    }
+}
+:root {
+    --color-primary: #15121C;
+    --color-secondary: #2E2A35;
+    --color-accent: #DDB362;
+    --color-text: white;
+    --color-grey: #C9C9D6;
+    --hover-brightness: 0.5;
+}
+
+body {
+    width: 375px;
+    height: 600px;
+}
+
+section {
+    padding: 5px 0 5px 0;
+}
+
+h3 {
+    font-size: 13px;
+    line-height: 14px;
+    margin: 0 8px 0 8px;
+    padding: 7px;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--color-text);
+}
+
+header {
+    height: 35px;
+}
+
+header .logo {
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    margin: 5px 8px 5px 8px;
+    padding: 8px 10px 8px 10px;
+}
+
+.card .dropdown-button {
+    width: 100px;
+    height: 26px;
+    background-color: var(--color-grey);
+    color: var(--color-text);
+    border-radius: 8px;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+    align-items: center;
+}
+
+.card .checkbox-md {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+.card .checkbox-md:checked {
+    accent-color: var(--color-accent);
+}
+
+.card .checkbox-lg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.card .checkbox-lg:checked {
+    accent-color: var(--color-accent);
+}
+
+.listing-options {
+    margin: 0px 20px 0px 20px;
+}
+
+.listing-options li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    color: var(--color-text);
+}
+
+.tab-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(82%) sepia(3%) saturate(242%) hue-rotate(202deg) brightness(85%) contrast(92%);
+}
+
+.tab:hover {
+    filter: brightness(var(--hover-brightness));
+}
+
+.tab:active .tab-icon {
+    filter: invert(84%) sepia(51%) saturate(570%) hue-rotate(329deg) brightness(91%) contrast(89%);
+}
+
+.tab:active p {
+    color: var(--color-accent);
+}
+

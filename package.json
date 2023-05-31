@@ -8,5 +8,8 @@
     "scripts": {
         "prestart": ".\\node_modules\\.bin\\tsc --project .\\background\\tsconfig.json",
         "start": ".\\node_modules\\.bin\\tsc --project .\\tsconfig.json"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.3.2"
     }
 }
