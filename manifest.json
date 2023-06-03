@@ -5,6 +5,9 @@
     "version_name": "2.2.4",
     "description": "Adds cosmetic functionality to buff.163.com",
     "manifest_version": 3,
+    "action": {
+        "default_popup": "/popup/src/index.html"
+     },
     "background": {
         "service_worker": "background/merge_background.js"
     },

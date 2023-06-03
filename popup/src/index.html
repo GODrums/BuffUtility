@@ -10,12 +10,14 @@
 			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="/popup/js/jquery-1.9.1.js"></script>
+		<script src="/popup/js/init.js"></script>
 	</head>
 	<body>
 		<header
 			class="bg-primary flex align-middle items-center pl-2 pr-2 flex-row justify-between"
 		>
-			<div id="version" class="text-white">v. 1.0.0</div>
+			<div id="version" class="text-white">v. 2.3.0</div>
 			<div class="image-container">
 				<img
 					class="logo justi"
@@ -32,78 +34,24 @@
 				</button>
 			</div>
 		</header>
-		<div class="bg-background">
-			<section>
-				<h3>Currency</h3>
-				<div class="card">
-					<p>Display Currency</p>
-					<button type="button" class="dropdown-button">
-						EUR- €
-					</button>
-				</div>
-				<div class="card">
-					<p>Listing Difference Style</p>
-					<button type="button" class="dropdown-button">
-						¥ Difference
-					</button>
-				</div>
-				<div class="card">
-					<p>Color Purchase Options</p>
-					<input type="checkbox" class="checkbox-lg" />
-				</div>
-			</section>
-			<section>
-				<h3>Listing</h3>
-				<div class="card" style="display: block !important">
-					<p class="pb-2">Listing Options</p>
-					<ul class="listing-options">
-						<li>
-							<label>3D Inspect</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-						<li>
-							<label>Inspect in Server</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-						<li>
-							<label>Copy !gen/!gengl</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-						<li>
-							<label>Share</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-						<li>
-							<label>Match floatDB</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-						<li>
-							<label>Find Similar</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-						<li>
-							<label>Detail</label>
-							<input type="checkbox" class="checkbox-md" />
-						</li>
-					</ul>
-				</div>
-			</section>
+		<div class="main-content bg-background">
+			
 		</div>
 		<footer class="bg-primary items-center align-middle" style="height: 60px;">
 			<div class="tabbar flex flex-row justify-between pl-5 pr-5 translate-y-1/4">
-				<button class="tab">
+				<button class="tab tabItem" data-page="settings.html">
 					<img src="/popup/icons/gear-solid.svg" class="tab-icon" />
 					<p>Settings</p>
 				</button>
-				<button class="tab">
-					<img src="/popup/icons/bug-solid.svg" class="tab-icon" />
+				<button class="tab tabItem" data-page="experimental.html">
+					<img src="/popup/icons/bug-solid.svg" class="tab-icon"/>
 					<p>Experimental</p>
 				</button>
-				<button class="tab">
+				<button class="tab tabItem" data-page="pse.html">
 					<img src="/popup/icons/steam.svg" class="tab-icon" />
 					<p>PSE</p>
 				</button>
-				<button class="tab">
+				<button class="tab tabItem" data-page="modules.html">
 					<img src="/popup/icons/box-solid.svg" class="tab-icon" />
 					<p>Modules</p>
 				</button>
