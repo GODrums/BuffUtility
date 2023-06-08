@@ -27,5 +27,9 @@ node_modules/.bin/tsc -p steam/tsconfig.json
 echo "Done."
 echo ""
 
+echo "Running taildwindcss build"
+node_modules/.bin/tailwindcss-cli -i .\\popup\\css\\base.css -o .\\popup\\dist\\output.css
+echo ""
+
 # pause
 read -p "Press [ENTER] to resume ..."
