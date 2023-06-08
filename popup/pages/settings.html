@@ -15,7 +15,7 @@
 			<option>€ Difference</option>
 		</select>
 	</div>
-    <div class="card">
+	<div class="card">
 		<p>Difference Dominator</p>
 		<select class="dropdown">
 			<option>Steam</option>
@@ -27,7 +27,7 @@
 	<h3>Listings</h3>
 	<div class="card" style="display: block !important">
 		<p class="pb-2">Listing Options</p>
-		<ul class="listing-options">
+		<ul class="multi-options">
 			<li>
 				<label>3D Inspect</label>
 				<input type="checkbox" class="checkbox-md" />
@@ -64,7 +64,7 @@
 	</div>
 	<div class="card" style="display: block !important">
 		<p class="pb-2">Color Purchase Options</p>
-		<ul class="listing-options">
+		<ul class="multi-options">
 			<li>
 				<label>Colored Buy</label>
 				<input type="checkbox" class="checkbox-md" />
@@ -82,25 +82,63 @@
 		<p>Use Color Scheme</p>
 		<input type="checkbox" class="checkbox-lg" />
 	</div>
-    <div class="card">
+	<div class="card" style="display: block !important">
+		<div class="flex flex-row justify-between pb-2">
+			<p class="pb-2">Custom Color Scheme</p>
+			<input type="checkbox" class="checkbox-lg" />
+		</div>
+		<ul class="multi-options color-options">
+			<li>
+				<label for="color_scheme-0">Background</label
+				><input type="color" value="#121212" />
+			</li>
+			<li>
+				<label for="color_scheme-1">Background Hover</label
+				><input type="color" value="#1f1f1f" />
+			</li>
+			<li>
+				<label for="color_scheme-2">Text Color</label
+				><input type="color" value="#bfbfbf" />
+			</li>
+			<li>
+				<label for="color_scheme-3">Text Color Disabled</label
+				><input type="color" value="#696969" />
+			</li>
+		</ul>
+	</div>
+	<div class="card">
+		<p>Can expand preview</p>
+		<input type="checkbox" class="checkbox-lg" />
+	</div>
+	<div class="card">
 		<p>Expanded preview backdrop</p>
 		<input type="checkbox" class="checkbox-lg" />
 	</div>
-    <div class="card">
+	<div class="card">
 		<p>Expand preview type</p>
 		<select class="dropdown">
 			<option>Preview</option>
 			<option>Inspect</option>
 		</select>
 	</div>
-    <div class="card">
+	<div class="card">
 		<p>Custom Preview Resolution</p>
 		<select class="dropdown">
 			<option>Auto</option>
 			<option>w245/h230</option>
 		</select>
 	</div>
-    <div class="card">
+	<div class="card">
+		<p>Location Reload Newest</p>
+		<select class="dropdown">
+			<option>None</option>
+			<option>Bulk</option>
+			<option>Sort</option>
+			<option>Center</option>
+			<option>Left</option>
+		</select>
+	</div>
+	<div class="card">
 		<p>Default sort by</p>
 		<select class="dropdown">
 			<option>Default</option>
@@ -114,7 +152,7 @@
 			<option>Time Cost Ascending</option>
 		</select>
 	</div>
-    <div class="card">
+	<div class="card">
 		<p>Default Sticker Search</p>
 		<select class="dropdown">
 			<option>All</option>
@@ -126,12 +164,16 @@
 			<option>Save Custom</option>
 		</select>
 	</div>
-    <div class="card">
+	<div class="card">
 		<p>Apply Steam tax</p>
 		<input type="checkbox" class="checkbox-lg" />
 	</div>
-    <div class="card">
+	<div class="card">
 		<p>Show toast on action</p>
+		<input type="checkbox" class="checkbox-lg" />
+	</div>
+	<div class="card">
+		<p>Data Protection</p>
 		<input type="checkbox" class="checkbox-lg" />
 	</div>
 </section>

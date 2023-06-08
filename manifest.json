@@ -6,7 +6,7 @@
     "description": "Adds cosmetic functionality to buff.163.com",
     "manifest_version": 3,
     "action": {
-        "default_popup": "/popup/src/index.html"
+        "default_popup": "popup/pages/index.html"
      },
     "background": {
         "service_worker": "background/merge_background.js"

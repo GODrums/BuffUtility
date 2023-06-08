@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="/popup/css/output.css" rel="stylesheet" type="text/css" />
+		<link href="/popup/dist/output.css" rel="stylesheet" type="text/css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<header
-			class="bg-primary flex align-middle items-center pl-2 pr-2 flex-row justify-between"
+			class="flex align-middle items-center pl-2 pr-2 flex-row justify-between"
 		>
 			<div id="version" class="text-white">v. 2.3.0</div>
 			<div class="image-container">
@@ -28,7 +28,7 @@
 			<div class="reset-container pt-1 pb-1 text-white">
 				<button
 					id="button-reset"
-					class="btn btn-primary bg-background rounded-md pl-2 pr-2"
+					class="rounded-md pl-2 pr-2 pt-px pb-px"
 				>
 					Reset
 				</button>
@@ -37,9 +37,9 @@
 		<div class="main-content bg-background">
 			
 		</div>
-		<footer class="bg-primary items-center align-middle" style="height: 60px;">
+		<footer class="align-middle" style="height: 60px;">
 			<div class="tabbar flex flex-row justify-between pl-5 pr-5 translate-y-1/4">
-				<button class="tab tabItem" data-page="settings.html">
+				<button class="tab tabItem active" data-page="settings.html">
 					<img src="/popup/icons/gear-solid.svg" class="tab-icon" />
 					<p>Settings</p>
 				</button>

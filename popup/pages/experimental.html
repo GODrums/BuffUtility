@@ -13,6 +13,10 @@
 		<input type="checkbox" class="checkbox-lg" />
 	</div>
     <div class="card">
+		<p>Adjust Trade Records</p>
+		<input type="checkbox" class="checkbox-lg" />
+	</div>
+    <div class="card">
 		<p>Expand preview type</p>
 		<select class="dropdown">
 			<option>Preview</option>
@@ -50,12 +54,24 @@
 		<input type="checkbox" class="checkbox-lg" />
 	</div>
     <div class="card">
-		<p>Bargain Calculator</p>
+		<p>Favorite Bargain</p>
 		<input type="checkbox" class="checkbox-lg" />
+	</div>
+    <div class="card" style="display: block !important">
+		<div class="flex flex-row justify-between pb-2">
+			<p class="pb-2">Bargain Calculator</p>
+			<input type="checkbox" class="checkbox-lg" />
+		</div>
+		<div class="multi-options">
+			<li>
+				<label for="automatic_bargain_default">Default Value</label>
+				<input id="automatic_bargain_default" type="number" data-target="input" value="10">
+			</li>
+		</div>
 	</div>
 	<div class="card" style="display: block !important">
 		<p class="pb-2">Preferred Payment Methods</p>
-		<ul class="listing-options">
+		<ul class="multi-options">
 			<li>
 				<label>BUFF balance-Alipay</label>
 				<input type="checkbox" class="checkbox-md" />
@@ -77,5 +93,24 @@
 				<input type="checkbox" class="checkbox-md" />
 			</li>
 		</ul>
+	</div>
+</section>
+<section>
+    <h3 style="color: #b91010;">⚠ Require Request ⚠</h3>
+    <div class="card">
+		<p>Fetch Favorite Bargain Status</p>
+		<input type="checkbox" class="checkbox-lg" />
+	</div>
+	<div class="card">
+		<p>Fetch Item Price History</p>
+		<select class="dropdown">
+			<option>Off</option>
+			<option>7 Days</option>
+			<option>30 Days</option>
+		</select>
+	</div>
+    <div class="card">
+		<p>Fetch Sticker Price %</p>
+		<input type="checkbox" class="checkbox-lg" />
 	</div>
 </section>

@@ -7,7 +7,8 @@
     },
     "scripts": {
         "prestart": ".\\node_modules\\.bin\\tsc --project .\\background\\tsconfig.json",
-        "start": ".\\node_modules\\.bin\\tsc --project .\\tsconfig.json"
+        "start": ".\\node_modules\\.bin\\tsc --project .\\tsconfig.json",
+        "build-css": "npx tailwindcss-cli -i .\\popup\\css\\base.css -o .\\popup\\dist\\output.css"
     },
     "devDependencies": {
         "tailwindcss": "^3.3.2"
