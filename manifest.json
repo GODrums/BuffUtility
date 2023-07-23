@@ -117,6 +117,15 @@
         },
         {
             "js": [
+                "sources/adjustments/Adjust_User.js"
+            ],
+            "matches": [
+                "https://buff.163.com/user-center*"
+            ],
+            "all_frames": true
+        },
+        {
+            "js": [
                 "sources/config.js",
                 "sources/BrowserInterface.js",
                 "sources/Util.js",
